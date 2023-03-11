@@ -1,10 +1,32 @@
-.news-input {
-    max-width: 500px;
-    width: 300px;
+/*Google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 
-  }
+/* === Global ===*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+header {
+    width: 100vw;
+    height: 100vw;
+    background-image: url("img/hill-image.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    
+}
 
-  .list-group-item{
-    font-size: 20px;
-
-  }
+.header-content{
+    margin-bottom: 150px;
+    color: #fffefe;
+    text-align: center;
+}
+.header-content h2{
+    font-size: 10vmin;
+}
