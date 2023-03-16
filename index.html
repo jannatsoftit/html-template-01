@@ -13,29 +13,67 @@
 <!--Navbar-->
 <nav class="navbar">
     <h1 class="logo">TRAVEL</h1>
-
     <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></a></li>
-        <li><a href="#">Explore</a></li>
-        <li><a href="#">Tours</a></li>
-        <li><a href="#" class="btn-1">Contact</a></li>
+        <li class="active"><a href="#"></a>Home</li>
+        <li><a href="#"></a>About</li>
+        <li><a href="#"></a>Explore</li>
+        <li><a href="#"></a>Tours</li>
+        <li class="btn-1"><a href="#"></a>Contact</li>
     </ul>
+    <img src="img/mobile-menu-icon.jpg" alt="" class="menu-btn">
 
-
-</nav>
-   
+</nav>  
    <!--Hero Area-->
     <header>
         <div class="header-content">
             <h2>Explore The Colorful World</h2>
-
-            <div class="line"></div>
-           
+            <div class="line"></div>   
             <h1>A Wonderful Gift</h1>
             <a href="#" class="btn">Learn More </a>
         </div>
     </header>
+
+    <!--Event Action-->
+    <section class="events">
+        <div class="title">
+            <h1>UPCOMING EVENTS</h1>
+            <div class="line"></div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <img src="img/travel-01.jpg" alt="">
+                <h4>Events Camp Trek</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Tempore sint reiciendis voluptatem libero molestias quibusdam delectus 
+                animi natus dolorum neque reprehenderit suscipit molestiae nihil ratione corporis, 
+                voluptates, aliquid pariatur illo!</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+
+            <div class="col">
+                <img src="img/travel-02.jpg" alt="" id="img2">
+                <h4>Walking Holiday</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Tempore sint reiciendis voluptatem libero molestias quibusdam delectus 
+                animi natus dolorum neque reprehenderit suscipit molestiae nihil ratione corporis, 
+                voluptates, aliquid pariatur illo!</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+            
+        </div>
+        
+    </section>
+
+    <script>
+        const menuBtn = document.querySelector(".menu-btn");
+        const navLinks = document.querySelector(".nav-links");  
+
+        menuBtn.addEventListener('click',()=>{
+            navLinks.classList.toggle('mobile-menu');
+        })
+
+    </script>
     
 </body>
 </html>

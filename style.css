@@ -13,35 +13,35 @@ a{
 ul{
     list-style: none;
 }
+.active{
+    color: #fc036b;
+    text-decoration: underline;
+    font-weight: bold;
+}
 
 /*Navbar Area*/
+
 .navbar{
-    display: flex;
+    
     position: absolute;
     top: 0;
     left: 0;
+    display: flex;
     width: 100%;
     justify-content: space-between;
     padding: 20px;
-    color: whitesmoke;
+    color: rgb(228, 228, 228);
 }
-.navbar h1{
-    color: #fbe818;
-    font-size: 35px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+.nav-links {
+   display: flex;
+   align-items: center;
 }
 
-.nav-links{
-   display: flex;
-   align-items: center; 
-}
 .nav-links li{
-    margin: 0px 30px;
+    margin: 0 30px;
+    cursor: pointer;
 }
-.navbar li a{
-    color: rgb(23, 22, 22);
-    font-weight: 600;
-}
+
 
 .btn-1{
     padding: 7px;
@@ -57,7 +57,9 @@ ul{
 }
 
 
+
 /*Header Area*/
+
 header {
     width: 100%;
     height: 600px;
@@ -104,4 +106,103 @@ header {
     background-color: #f5e452;
     color: #5d5b5b; 
   }
+
+.menu-btn{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 40px;
+    cursor: pointer;
+    display: none;
+  }
+/*== Event css ==*/
+
+section{
+   width: 80%;
+   margin: 80px auto;
+}
+.title{
+    text-align: center;
+    font-size: 5vmin;
+}
+.row{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+     
+}
+.row .col img{
+    width: 80%;
+    
+}
+.row .col{
+    display: flex;  
+    flex-direction: column;
+    align-items: center;
+}
+
+.event .row{
+margin-top: 50px;
+}
+
+h4{
+    color: #084e8c;
+    font-size: 3vmin;
+    margin: 20px auto;
+}
+p{
+    color: #6c6e70;
+    padding: 0px 40px;
+
+}
+.event .row .btn{
+    margin-top: 30px;
+}
+
+/*mobile device*/
+
+@media only screen and (max-width:850px){
+
+    .menu-btn{
+    display: block;
+    }
+
+    .logo{
+    position: absolute;
+    top: 30px;
+    bottom: 30px;  
+    left: 20px;  
+    }
+
+    .navbar{
+      padding: 0px;  
+    }
+
+    .nav-links{
+      flex-direction: column;
+      width: 100%;
+      height: 100vh;
+      justify-content: center;
+      background-color: #084e8c;
+      margin-top: -900px;
+      transition: all 0.5s;
+    }
+
+    .mobile-menu{
+      margin-top: 0px;
+      border-bottom-right-radius: 30%;
+    }
+
+    .nav-links li{
+        margin: 20px auto;
+    }
+}
+
+
+
+
+
+
+
 
