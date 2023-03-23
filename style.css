@@ -13,6 +13,7 @@ a{
 ul{
     list-style: none;
 }
+
 .active{
     color: #fc036b;
     text-decoration: underline;
@@ -156,8 +157,75 @@ p{
     padding: 0px 40px;
 
 }
-.event .row .btn{
-    margin-top: 30px;
+.row .col{
+    margin-top: 25px;
+}
+.row .col .btn{
+    margin-top: 20px;
+}
+
+/*== Explore css ==*/
+
+.explore{
+  width: 100%;
+  height: 100vh;
+  background-image: url(img/nature-pic.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+.explore-content{
+    width: 60%;
+    height: 270px;
+    color: #fffefe;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.explore-content h1{
+    font-size: 6vmin;
+    margin: 20px;
+}
+.explore-content p{
+  color: #e0d8d8;
+  margin-left: 130px;
+  margin-top: 10px;
+}
+.explore-content .btn{
+ margin-top: 20px;
+}
+
+/*== Tours css ==*/
+.content-col{
+    width: 40%;
+}
+.image-col{
+    width: 60%;
+}
+.tours .image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+}
+.image-gallery img {
+    max-width: 600px; 
+    margin: 5px;
+}
+.content-col h1{
+    font-size: 6vmin;
+    color: #000000;
+}
+.content-col .line{
+    margin-left: -1px;
+}
+.content-col p{
+    padding: 0px;
+}
+.content-col .btn{
+    margin-top: 10px;
 }
 
 /*mobile device*/
@@ -176,26 +244,26 @@ p{
     }
 
     .navbar{
-      padding: 0px;  
+    padding: 0px;  
     }
 
     .nav-links{
-      flex-direction: column;
-      width: 100%;
-      height: 100vh;
-      justify-content: center;
-      background-color: #084e8c;
-      margin-top: -900px;
-      transition: all 0.5s;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    background-color: #084e8c;
+    margin-top: -900px;
+    transition: all 0.5s;
     }
 
     .mobile-menu{
-      margin-top: 0px;
-      border-bottom-right-radius: 30%;
+    margin-top: 0px;
+    border-bottom-right-radius: 30%;
     }
 
     .nav-links li{
-        margin: 20px auto;
+    margin: 20px auto;
     }
 }
 
